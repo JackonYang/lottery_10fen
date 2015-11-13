@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}页面不存在-陕西快乐十分{% endblock %}
+
+{% block content %}
+
+<p>抱歉, 您访问的页面不存在.</p>
+
+<p>关注微信公众号, 获取最新使用帮助.</p>
+
+<img src="{{ url_for("static", filename="images/pub_qrcode.jpg") }}">
+
+
+{% endblock %}

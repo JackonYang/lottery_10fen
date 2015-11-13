@@ -1,0 +1,111 @@
+.container {
+    padding-bottom: 3em;
+}
+
+#footer {
+  position: fixed;  /* required */
+  bottom: 0;  /* required. 下外边距边界与其包含块下边界之间的偏移 */
+  /* layout */
+  background: #33A0A8;
+  width: 100%;
+  height: 2em;
+  padding-right: 0;
+  padding-left: 0;
+  max-height: 340px;
+  text-align: center;
+  font-family: times;
+}
+
+.status-time {
+  color: #FFE000;
+}
+
+
+.status-label {
+  color: #6EE3EB;
+}
+
+
+.promt-txt {
+  color: #D6DCDA;
+}
+
+.promt-txt:hover {
+  text-decoration: initial;
+}
+
+
+/* live-win */
+
+@media (max-width: 767px) {  /* phones */
+    .win-table {
+        font-size: 4pt;
+    }
+}
+
+.win-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align:center;
+    border-spacing: 0px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000000;
+    max-width: 860px;
+    margin: auto;
+}
+
+.win-table > thead > tr > th {
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000000;
+    background: #d8d8ee;
+}
+
+.win-table > tbody > tr > td {
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #BABBB7;
+    margin: 0px;
+    padding: 0px;
+}
+
+.win-table > tbody > tr:nth-child(even) {
+    background: #F5F9FC;
+}
+
+.win-table > tbody > tr:nth-child(odd) {
+    background: #EAF2F5;
+}
+
+.win-table > tbody > tr:hover {
+    background-color: #F4F2D7;
+}
+
+.win-seq {
+    color:#000;
+}
+
+.col-win-head {
+    background-color: #FEF29E;
+    color: #D40000;
+    font-weight: bold;
+    font-size: 1.6em;
+    font-family: times;
+}
+
+.win-head {
+    color: #D40000;
+    font-weight: bold;
+    font-size: 1.6em;
+    font-family: times;
+}
+
+.win-tail {
+    color: #3773E1;
+    font-weight: bold;
+    font-size: 1.6em;
+    font-family: times;
+}

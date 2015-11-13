@@ -10,7 +10,7 @@
     <link href="http://static.jackon.me/bootstrap-3.3.5/css/bootstrap-theme.min.css" rel="stylesheet"></link>
     <link href="http://static.jackon.me/Font-Awesome-4.4.0/css/font-awesome.min.css" rel="stylesheet"></link>
     <!-- site css -->
-    {# <link href="{{ url_for("static", filename="css/site.css") }}" rel="stylesheet"> #}
+    <link href="{{ url_for("static", filename="css/site.css") }}" rel="stylesheet">
     {% block css %}{% endblock %}
 </head>
 <body>
@@ -24,7 +24,7 @@
     <script src="http://static.jackon.me/jquery-1.11.3/jquery-1.11.3.min.js"></script>
     <script src="http://static.jackon.me/bootstrap-3.3.5/js/bootstrap.min.js"></script>
     <!-- site js -->
-    {# <script src="{{ url_for("static", filename="js/site.js") }}"></script> #}
+    <script src="{{ url_for("static", filename="js/site.js") }}"></script>
     {% block js %}{% endblock %}
 </body>
 </html>

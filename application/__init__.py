@@ -30,10 +30,10 @@ def make_app():
 
 def registe_api(app):
     """Register api."""
-    import views
+    import resources
 
     api = Api(app)
-    # api.add_resource(views.LiveWin, '/api/live-win/<int:count>')
+    api.add_resource(resources.LiveWin, '/api/live-win/<int:count>')
 
 
 def registe_routes(app):

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> {% block title %}{% endblock %} </title>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- common css -->
+    <link href="http://static.jackon.me/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet"></link>
+    <link href="http://static.jackon.me/bootstrap-3.3.5/css/bootstrap-theme.min.css" rel="stylesheet"></link>
+    <link href="http://static.jackon.me/Font-Awesome-4.4.0/css/font-awesome.min.css" rel="stylesheet"></link>
+    <!-- site css -->
+    {# <link href="{{ url_for("static", filename="css/site.css") }}" rel="stylesheet"> #}
+    {% block css %}{% endblock %}
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <div class="container">
+    {% block content %}{% endblock %}
+    </div>
+    {% include 'footer.html' %}
+    <script src="//hm.baidu.com/hm.js?7452bb22da71096bfb669c8de8a7dbb4"></script>
+    <!-- common js -->
+    <script src="http://static.jackon.me/jquery-1.11.3/jquery-1.11.3.min.js"></script>
+    <script src="http://static.jackon.me/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+    <!-- site js -->
+    {# <script src="{{ url_for("static", filename="js/site.js") }}"></script> #}
+    {% block js %}{% endblock %}
+</body>
+</html>

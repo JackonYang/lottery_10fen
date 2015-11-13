@@ -1,6 +1,8 @@
 /*
  *
  */
+var last_win = {}
+
 var tmpl_win_line = function (data) {
     var win = data.win;
     var num_class = new Array(21);  // use index 1-20
@@ -28,11 +30,19 @@ var tmpl_win_line = function (data) {
 };
 
 
+var update_status_info = function (data) {
+    last_win = data;
+    $("#status-seq").text(last_win.seq);
+    $("#status-time").text(last_win.time);
+}
+
+
 var show_live_win = function (obj) {
     $.getJSON('/api/live-win/34', function (json) {
         json.forEach(function (item) {
             $(obj).append(tmpl_win_line(item));
         });
+        update_status_info(json[json.length-1]);
     });
 };
 

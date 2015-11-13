@@ -16,22 +16,12 @@
   font-family: times;
 }
 
-.status-time {
-  color: #FFE000;
-}
-
-
-.status-label {
+.status-text {
   color: #6EE3EB;
 }
 
-
-.promt-txt {
-  color: #D6DCDA;
-}
-
-.promt-txt:hover {
-  text-decoration: initial;
+.status-value {
+  color: #FFE000;
 }
 
 
